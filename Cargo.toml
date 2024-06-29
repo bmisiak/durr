@@ -1,0 +1,12 @@
+[package]
+name = "durr"
+version = "1.0.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+keywords = ["duration", "time", "seconds", "shorthand", "helper"]
+categories = ["date-and-time", "development-tools"]
+description = "5.minutes() instead of Duration::from_seconds(300)"
+homepage = "https://lib.rs/durr"
+repository = "https://github.com/bmisiak/durr"
+readme = "README.md"
+[dependencies]
