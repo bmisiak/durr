@@ -9,5 +9,4 @@ A simple helper trait for writing durations in a human-readable way.
 10.seconds()       == Duration::from_secs(10)
 5.minutes()        == Duration::from_secs(5*60)
 2.hours()          == Duration::from_secs(2*3600)
-3.days()           == Duration::from_secs(3*86400)
 ```
