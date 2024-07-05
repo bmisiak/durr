@@ -1,3 +1,4 @@
+#[forbid(unsafe_code)]
 use std::time::Duration;
 pub trait Durr {
     fn nanoseconds(&self) -> Duration;
@@ -9,21 +10,27 @@ pub trait Durr {
 }
 
 impl Durr for u64 {
+    #[inline]
     fn nanoseconds(&self) -> Duration {
         Duration::from_nanos(*self)
     }
+    #[inline]
     fn milliseconds(&self) -> Duration {
         Duration::from_millis(*self)
     }
+    #[inline]
     fn seconds(&self) -> Duration {
         Duration::from_secs(*self)
     }
+    #[inline]
     fn minutes(&self) -> Duration {
         Duration::from_secs(*self * 60)
     }
+    #[inline]
     fn hours(&self) -> Duration {
         Duration::from_secs(*self * 3600)
     }
+    #[inline]
     fn days(&self) -> Duration {
         Duration::from_secs(*self * 86400)
     }
